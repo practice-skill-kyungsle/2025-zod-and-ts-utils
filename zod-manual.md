@@ -173,6 +173,9 @@ z.tuple([z.string(), z.number(), z.boolean()])
 
 // rest를 사용한 가변 길이 튜플
 z.tuple([z.string(), z.number()]).rest(z.boolean())
+
+// with generic
+type Tuple<T, N extends number> = // T: 요소 타입, N: 길이
 ```
 
 ## 유니온 (Unions)
